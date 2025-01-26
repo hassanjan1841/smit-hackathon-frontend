@@ -12,6 +12,9 @@ export default defineConfig({
       plugins: [tailwindcss],
     },
   },
+  define: {
+    __APP_ENV__: immport.meta.env.VITE_API_URL,
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
